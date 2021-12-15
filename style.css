@@ -1,0 +1,237 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.header{
+     height:500px;
+     background-color: rgba(255, 0, 0, 0.11);
+}
+body{
+     height:1000px;
+}
+.header__navbar-item-link
+{
+     text-decoration: none;
+     padding:0 20px;
+    color:rgba(255, 255, 255, 0.671);
+     font-size:20px;
+     
+}
+.header__navbar-item-link:hover{
+     color:white;
+}
+.header__navbar-item
+{
+     display:inline-block;
+     padding:50px;
+     
+}
+.header__navbar{
+     display:flex;
+     /* background-image: url("photo-1621111848501-8d3634f82336.jfif"); */
+     height:600px;
+     background-size: cover;
+     position:relative;
+animation: background;
+animation-duration: 20s;
+animation-direction: alternate-reverse;
+animation-iteration-count: infinite;
+animation-fill-mode: backwards;
+animation-timing-function:cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.header__navbar-list--right
+{
+  
+   margin-left: -40px;
+  
+}
+.header__navbar-item--right
+{
+     padding-left:0px;
+     margin-top: -5px;
+   
+}
+.header__navbar-item-link--name
+{
+     padding-left:10px;
+     font-size:30px;
+     margin-top:200px;
+     font-weight: bold;
+     color:rgb(255, 255, 255);
+}
+.main__title
+{
+     font-weight: 800;
+     padding:30px;
+     text-align: center;
+     font-size: 30px;
+     display:block;
+     position:relative;
+     padding-top:200px;
+}
+
+@keyframes background
+{
+    
+     0% {background-image: url("photo-1523961131990-5ea7c61b2107.jfif");
+     
+     }
+  55% {background-image: url("ramon-salinero-vEE00Hx5d0Q-unsplash.jpg");}
+  100% {background-image: url("alexander-shatov-mr4JG4SYOF8-unsplash.jpg");}
+  
+}
+@keyframes text{
+     from
+     {
+
+     }
+     to
+     {
+
+     }
+}
+h2{
+     color:white;
+     display: block;
+     margin:0 auto;
+     width: 100%;
+     text-align: center;
+     color:wheat;
+}
+.content
+{
+     position:absolute;
+     top: 40%;left:50%;
+     transform: translateX(-50%);
+     font-size: 50px;
+    width: 100%;
+    height:200px;
+}
+h3{
+     position:absolute;
+     font-size: 30px;
+     color:wheat;
+     top: 30%;
+     left:0;
+     font-size: 20px;
+     width: inherit;
+     text-align: center;
+}
+.text-connect
+{
+     text-align: center;
+}
+.button-connect
+{
+     color:white;
+     position:absolute;
+     top:100%;
+     left:50%;
+     transform: translate(-50%, -50%);
+     font-size: 20px;
+     padding:10px 70px;
+     background-color: transparent;
+     border-radius: 5px;
+     border:2px solid white;
+     text-decoration: none;
+     transition:background-color 0.2s linear;
+}
+.button-connect:hover{
+     background-color: rgb(255, 166, 0);
+     
+     
+}
+.box_img-item
+{
+     display: inline;
+
+    
+}
+.box{
+     display: flex;
+     margin-top:50px;
+     
+}
+.box_img-list
+{
+     display:flex;
+     justify-content: space-between;
+}
+
+.box__title
+{
+width: 30%;
+padding:0 40px;
+}
+h4{
+     text-align: center;
+}
+.box_img-item:not(:first-child)
+{
+     margin-left:20px;
+}
+.img1{
+width: 250px;
+height: 400px;
+background-image: url("photo-1536412597336-ade7b523ecfc.jfif");
+}
+.img2{
+     width: 250px;
+     height: 400px;
+     background-image: url("photo-1538391543564-047a76156421.jfif");
+     }
+.img3
+{
+width: 250px;
+height: 400px;
+background-image: url("photo-1620712943543-bcc4688e7485.jfif");
+}
+.img{
+     border-radius: 5px;
+     background-size: cover;
+}
